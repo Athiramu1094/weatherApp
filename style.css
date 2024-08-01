@@ -1,0 +1,147 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #e0f7fa;
+    background-image: url('images/cover.png'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+}
+
+.weather-card {
+    background-color: white;
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    border: 2px solid #0288d1;
+    background-image: url('images/weatherCover.avif'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.search-bar {
+    display: flex;
+    margin-bottom: 1em;
+}
+
+input[type="text"] {
+    width: calc(100% - 50px);
+    padding: 0.5em;
+    border: 1px solid #0288d1;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+button {
+    padding: 0.5em;
+    border: 1px solid #0288d1;
+    border-left: 0;
+    background-color: #0288d1;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+    outline: none;
+}
+
+button:hover {
+    background-color: #0277bd;
+}
+
+.weather-info {
+    text-align: center;
+}
+
+#weatherIcon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1em;
+}
+
+h1#temp {
+    font-size: 3em;
+    margin: 0.2em 0;
+    color: white;
+}
+
+h2#city {
+    font-size: 2em;
+    margin: 0.2em 0;
+    color: white;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.details > div {
+    text-align: left;
+    
+}
+
+.details span {
+    display: block;
+    font-size: 1rem;
+    margin: 0.5em 0;
+    color: white;
+}
+
+.details h2 {
+    font-size: 15px;
+    margin: 0;
+    color: #666;
+}
+
+.humidity{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.wind{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#humidityIcon{
+    font-size: 40px;
+}
+
+#windIcon{
+    font-size: 40px;
+}
+
+.weather-info{
+    display: none;
+}
+
+.description{
+    color: white;
+}
+

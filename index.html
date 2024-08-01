@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+<body>
+    <header></header>
+    <main>
+        <div class="weather-card">
+            
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="Search city">
+                    <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+        <div class="weather-info">
+                <img src="images/clearIcon.png" class="weatherIcon" alt="Weather Icon">
+                <p class="description">Description</p>
+                <h1 id="temp">22°C</h1>
+                <h2 id="city">New York</h2>
+                <div class="details">
+                    <div class="humidity">
+                        <span id="humidityIcon" class="material-symbols-outlined">
+                            humidity_percentage
+                            </span>
+                        <div class="humidityRate">
+                            <span id="humiditySpan">50% <br>Humidity</span>
+                        </div>
+                    </div>
+                    <div class="wind">
+                        <span id="windIcon" class="material-symbols-outlined">
+                            airwave
+                            </span>
+                        <div>
+                            <span id="windSpan">15 m/s <br>Wind Speed</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="index.js"></script>
+</body>
+</html>
